@@ -151,7 +151,7 @@ bash create_users.sh new_users.txt
 
 Screenshot placeholder:
 ```
-![Script Output](https://github.com/PavanSPK/User_Management_Automation/blob/ccf61ac97fb4e8a867ad04d693ddfe83df2c9fdd/project_outputs/script_output.png)
+![Script_Output](https://github.com/PavanSPK/User_Management_Automation/blob/ccf61ac97fb4e8a867ad04d693ddfe83df2c9fdd/project_outputs/script_output.png)
 ```
 
 ---------------------------------------------------------------------------------------------
@@ -168,7 +168,7 @@ Location:
 
 Screenshot placeholder:
 ```
-![Password File](https://github.com/PavanSPK/User_Management_Automation/blob/ccf61ac97fb4e8a867ad04d693ddfe83df2c9fdd/project_outputs/passwords.png)
+![Password_File](https://github.com/PavanSPK/User_Management_Automation/blob/ccf61ac97fb4e8a867ad04d693ddfe83df2c9fdd/project_outputs/passwords.png)
 ```
 
 ---------------------------------------------------------------------------------------------
@@ -183,7 +183,7 @@ Location:
 
 Screenshot placeholder:
 ```
-![Log File](https://github.com/PavanSPK/User_Management_Automation/blob/ccf61ac97fb4e8a867ad04d693ddfe83df2c9fdd/project_outputs/log_file.png)
+![Log_File](https://github.com/PavanSPK/User_Management_Automation/blob/ccf61ac97fb4e8a867ad04d693ddfe83df2c9fdd/project_outputs/log_file.png)
 ```
 
 ---------------------------------------------------------------------------------------------
@@ -214,7 +214,7 @@ If login succeeds → password set correctly.
 
 Screenshot placeholder:
 ```
-![Verification Output](https://github.com/PavanSPK/User_Management_Automation/blob/ccf61ac97fb4e8a867ad04d693ddfe83df2c9fdd/project_outputs/verify.png)
+![Verification_Output](https://github.com/PavanSPK/User_Management_Automation/blob/ccf61ac97fb4e8a867ad04d693ddfe83df2c9fdd/project_outputs/verify.png)
 ```
 
 ---------------------------------------------------------------------------------------------
