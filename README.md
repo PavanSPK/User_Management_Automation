@@ -89,8 +89,8 @@ This project reads an input file containing usernames and group memberships, the
  │ User accounts created │   │ Stores username & pw  │   │ Shows steps + results │
  │ using useradd/chpasswd│   │ for admin reference   │   │ in real-time          │
  └───────────┬───────────┘   └───────────┬──────────-┘   └───────────┬──────────-┘
-             │                           │                          │
-             ▼                           ▼                          ▼
+             │                           │                           │
+             ▼                           ▼                           ▼
    ┌──────────────────────-┐   ┌──────────────────────┐    ┌──────────────────────┐
    │  /home/<username>     │   │ project_outputs/     │    │ Admin / DevOps Team  │
    │ Auto-created folders  │   │ Stores screenshots   │    │ Uses output for      │
