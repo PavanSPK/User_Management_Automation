@@ -55,6 +55,50 @@ This project reads an input file containing usernames and group memberships, the
 6. **Clean Console Output**
    - Separation lines for readability
 
+### Architecture Diagram
+
+                      ┌─────────────────────────────┐
+                      │          Input Team         │
+                      │ Provides list of usernames  │
+                      └───────────────┬─────────────┘
+                                      │
+                                      ▼
+                        ┌───────────────────────────-┐
+                        │     Operator / Admin       |
+                        |     new_users.txt          │
+                        │  (Usernames to be created) │
+                        └───────────────┬────────────┘
+                                        │
+                                        ▼
+                         ┌─────────────────────────────-┐
+                         │     create_users.sh Script   │
+                         │ ─────────────────────────────│
+                         │ 1. Reads usernames           │
+                         │ 2. Generates passwords       │
+                         │ 3. Creates Linux users       │
+                         │ 4. Sets passwords            │
+                         │ 5. Verifies users            │
+                         │ 6. Logs output               │
+                         └──────────────┬─────────────-─┘
+                                        │
+              ┌─────────────────────────┼─────────────────────────┐
+              │                         │                         │
+              ▼                         ▼                         ▼
+ ┌──────────────────────-┐   ┌──────────────────────-┐   ┌───────────────────────┐
+ │ Linux System / OS     │   │ passwords.txt         │   │ Console Output        │
+ │ User accounts created │   │ Stores username & pw  │   │ Shows steps + results │
+ │ using useradd/chpasswd│   │ for admin reference   │   │ in real-time          │
+ └───────────┬───────────┘   └───────────┬──────────-┘   └───────────┬──────────-┘
+             │                           │                          │
+             ▼                           ▼                          ▼
+   ┌──────────────────────-┐   ┌──────────────────────┐    ┌──────────────────────┐
+   │  /home/<username>     │   │ project_outputs/     │    │ Admin / DevOps Team  │
+   │ Auto-created folders  │   │ Stores screenshots   │    │ Uses output for      │
+   │ for each user         │   │ (PNG files)          │    │ validation/auditing  │
+   └──────────────────────-┘   └──────────────────────┘    └──────────────────────┘
+
+
+
 ------------------------------------------------------------------------------------------
 
 ## 3. Requirements
