@@ -165,7 +165,7 @@ Location:
 /var/secure/user_passwords.txt
 ```
 
-Screenshot placeholder:
+Screenshot:
 
 ![Passwords](project_outputs/passwords.png)
 
