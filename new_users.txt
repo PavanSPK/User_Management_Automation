@@ -1,0 +1,4 @@
+# Developer onboarding list
+pavan; sudo,dev,www-data
+kumar; sudo
+spk; dev,www-data
