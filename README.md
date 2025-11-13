@@ -236,4 +236,4 @@ Screenshot:
 
 ## Author
 **PavanSPK**  
-🔗 GitHub: [@PavanSPK](https://github.com/PavanSPK) 
+GitHub: [@PavanSPK](https://github.com/PavanSPK) 
