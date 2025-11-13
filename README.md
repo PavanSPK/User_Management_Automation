@@ -150,9 +150,8 @@ bash create_users.sh new_users.txt
 ## 7. Console Output
 
 Screenshot placeholder:
-```
+
 ![Script Output](project_outputs/script_output.png)
-```
 
 ---------------------------------------------------------------------------------------------
 
@@ -167,9 +166,8 @@ Location:
 ```
 
 Screenshot placeholder:
-```
+
 ![Passwords](project_outputs/passwords.png)
-```
 
 ---------------------------------------------------------------------------------------------
 
@@ -181,10 +179,10 @@ Location:
 /var/log/user_management.log
 ```
 
-Screenshot placeholder:
-```
+Screenshot:
+
 ![Log File](project_outputs/log_file.png)
-```
+
 
 ---------------------------------------------------------------------------------------------
 
@@ -212,10 +210,9 @@ Enter the password stored in:
 
 If login succeeds → password set correctly.
 
-Screenshot placeholder:
-```
+Screenshot:
+
 ![Verify](project_outputs/verify.png)
-```
 
 ---------------------------------------------------------------------------------------------
 
@@ -240,5 +237,3 @@ Screenshot placeholder:
 ## Author
 **PavanSPK**  
 🔗 GitHub: [@PavanSPK](https://github.com/PavanSPK) 
-
-![Verify](project_outputs/verify.png)
