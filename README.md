@@ -79,10 +79,10 @@ This project reads an input file containing usernames and group memberships, the
                        │ 4. Sets passwords (chpasswd)                                  │
                        │ 5. Verifies users (id command)                                │
                        │ 6. Logs output + writes passwords.txt                         │
-                       └───────────────┬───────────────────────────┬───────────────────┘
-                                       │                           │
-                                       │                           │
-                                       ▼                           ▼
+                       └────┬───────────────────────────┬───────────────────-----------┘
+                            │                           │                              |
+                            │                           │                              |
+                            ▼                           ▼                              ▼
        ┌───────────────────────────────┐       ┌───────────────────────────────┐       ┌───────────────────────────────┐
        │       Linux System / OS       │       │         passwords.txt         │       │        Console Output         │
        │   User accounts created       │       │   Stores username & pw        │       │  Shows steps + results        │
