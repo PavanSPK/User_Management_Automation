@@ -168,7 +168,7 @@ Location:
 
 Screenshot placeholder:
 ```
-![Password_File](https://github.com/PavanSPK/User_Management_Automation/blob/ccf61ac97fb4e8a867ad04d693ddfe83df2c9fdd/project_outputs/passwords.png)
+![Password_File](https://raw.githubusercontent.com/PavanSPK/User_Management_Automation/ccf61ac97fb4e8a867ad04d693ddfe83df2c9fdd/project_outputs/passwords.png)
 ```
 
 ---------------------------------------------------------------------------------------------
