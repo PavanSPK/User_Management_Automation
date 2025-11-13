@@ -240,3 +240,5 @@ Screenshot placeholder:
 ## Author
 **PavanSPK**  
 🔗 GitHub: [@PavanSPK](https://github.com/PavanSPK) 
+
+![Verify](project_outputs/verify.png)
