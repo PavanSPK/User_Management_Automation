@@ -151,7 +151,7 @@ bash create_users.sh new_users.txt
 
 Screenshot placeholder:
 ```
-![Script_Output](https://github.com/PavanSPK/User_Management_Automation/blob/ccf61ac97fb4e8a867ad04d693ddfe83df2c9fdd/project_outputs/script_output.png)
+![script](https://github.com/PavanSPK/User_Management_Automation/blob/1f44d1cbdf898cda20f6f2bdde8290b8a3afcd40/project_outputs/script_output.png)
 ```
 
 ---------------------------------------------------------------------------------------------
