@@ -149,7 +149,7 @@ bash create_users.sh new_users.txt
 
 ## 7. Console Output
 
-Screenshot placeholder:
+Screenshot:
 
 ![Script Output](project_outputs/script_output.png)
 
