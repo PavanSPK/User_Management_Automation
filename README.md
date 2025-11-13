@@ -151,7 +151,7 @@ bash create_users.sh new_users.txt
 
 Screenshot placeholder:
 ```
-![Script Output](screenshots/script_output.png)
+![Script Output](https://github.com/PavanSPK/User_Management_Automation/blob/ccf61ac97fb4e8a867ad04d693ddfe83df2c9fdd/project_outputs/script_output.png)
 ```
 
 ---------------------------------------------------------------------------------------------
@@ -168,7 +168,7 @@ Location:
 
 Screenshot placeholder:
 ```
-![Password File](screenshots/password_file.png)
+![Password File](https://github.com/PavanSPK/User_Management_Automation/blob/ccf61ac97fb4e8a867ad04d693ddfe83df2c9fdd/project_outputs/passwords.png)
 ```
 
 ---------------------------------------------------------------------------------------------
@@ -183,7 +183,7 @@ Location:
 
 Screenshot placeholder:
 ```
-![Log File](screenshots/log_file.png)
+![Log File](https://github.com/PavanSPK/User_Management_Automation/blob/ccf61ac97fb4e8a867ad04d693ddfe83df2c9fdd/project_outputs/log_file.png)
 ```
 
 ---------------------------------------------------------------------------------------------
@@ -198,7 +198,7 @@ id kumar
 id spk
 ls -ld /home/pavan /home/kumar /home/spk
 ```
-## Confirm password works (optional)
+## Confirm password works
 
 Inside container:
 Switch to a user:
@@ -214,7 +214,7 @@ If login succeeds → password set correctly.
 
 Screenshot placeholder:
 ```
-![Verification Output](screenshots/id_check.png)
+![Verification Output](https://github.com/PavanSPK/User_Management_Automation/blob/ccf61ac97fb4e8a867ad04d693ddfe83df2c9fdd/project_outputs/verify.png)
 ```
 
 ---------------------------------------------------------------------------------------------
