@@ -57,45 +57,43 @@ This project reads an input file containing usernames and group memberships, the
 
 ### Architecture Diagram
 
-                      ┌─────────────────────────────┐
-                      │          Input Team         │
-                      │ Provides list of usernames  │
-                      └───────────────┬─────────────┘
-                                      │
-                                      ▼
-                        ┌───────────────────────────-┐
-                        │     Operator / Admin       |
-                        |     new_users.txt          │
-                        │  (Usernames to be created) │
-                        └───────────────┬────────────┘
-                                        │
-                                        ▼
-                         ┌─────────────────────────────-┐
-                         │     create_users.sh Script   │
-                         │ ─────────────────────────────│
-                         │ 1. Reads usernames           │
-                         │ 2. Generates passwords       │
-                         │ 3. Creates Linux users       │
-                         │ 4. Sets passwords            │
-                         │ 5. Verifies users            │
-                         │ 6. Logs output               │
-                         └──────────────┬─────────────-─┘
-                                        │
-              ┌─────────────────────────┼─────────────────────────┐
-              │                         │                         │
-              ▼                         ▼                         ▼
- ┌──────────────────────-┐   ┌──────────────────────-┐   ┌───────────────────────┐
- │ Linux System / OS     │   │ passwords.txt         │   │ Console Output        │
- │ User accounts created │   │ Stores username & pw  │   │ Shows steps + results │
- │ using useradd/chpasswd│   │ for admin reference   │   │ in real-time          │
- └───────────┬───────────┘   └───────────┬──────────-┘   └───────────┬──────────-┘
-             │                           │                           │
-             ▼                           ▼                           ▼
-   ┌──────────────────────-┐   ┌──────────────────────┐    ┌──────────────────────┐
-   │  /home/<username>     │   │ project_outputs/     │    │ Admin / DevOps Team  │
-   │ Auto-created folders  │   │ Stores screenshots   │    │ Uses output for      │
-   │ for each user         │   │ (PNG files)          │    │ validation/auditing  │
-   └──────────────────────-┘   └──────────────────────┘    └──────────────────────┘
+                                  ┌───────────────────────────────┐
+                                  │         HR / Input Team       │
+                                  │   Provides list of usernames  │
+                                  └───────────────┬───────────────┘
+                                                  │
+                                                  ▼
+                                  ┌───────────────────────────────┐
+                                  │         new_users.txt         │
+                                  │   (Usernames to be created)   │
+                                  └───────────────┬───────────────┘
+                                                  │
+                                                  ▼
+                       ┌──────────────────────────────────────────────────────────────-┐
+                       │                        create_users.sh                        │
+                       │──────────────────────────────────────────────────────────────-│
+                       │ 1. Reads usernames from file                                  │
+                       │ 2. Generates secure passwords                                 │
+                       │ 3. Creates Linux users (useradd)                              │
+                       │ 4. Sets passwords (chpasswd)                                  │
+                       │ 5. Verifies users (id command)                                │
+                       │ 6. Logs output + writes passwords.txt                         │
+                       └───────────────┬───────────────────────────┬───────────────────┘
+                                       │                           │
+                                       │                           │
+                                       ▼                           ▼
+       ┌───────────────────────────────┐       ┌───────────────────────────────┐       ┌───────────────────────────────┐
+       │       Linux System / OS       │       │         passwords.txt         │       │        Console Output         │
+       │   User accounts created       │       │   Stores username & pw        │       │  Shows steps + results        │
+       │   using useradd/chpasswd      │       │   for admin reference         │       │        in real-time           │
+       └───────────────┬──────────────-┘       └──────────────┬───────────────-┘       └──────────────┬────────────────┘
+                       │                                      │                                    │
+                       ▼                                      ▼                                    ▼
+       ┌───────────────────────────────┐       ┌───────────────────────────────┐       ┌───────────────────────────────┐
+       │       /home/<username>        │       │       project_outputs/        │       │       Admin / DevOps Team     │
+       │    Auto-created folders       │       │    Stores screenshots (PNG)   │       │ Uses output for validation    │
+       │        for each user          │       │      & documentation          │       │         & auditing            │
+       └───────────────────────────────┘       └───────────────────────────────┘       └───────────────────────────────┘
 
 
 
